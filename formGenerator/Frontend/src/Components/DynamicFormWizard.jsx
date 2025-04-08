@@ -230,7 +230,7 @@ const DynamicFormWizard = ({ schema }) => {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch("https://dynamic-form-generator-ashy.vercel.app/api/form/submit", {
+      const response = await fetch("https://dynamic-backend-uj8s.onrender.com/api/form/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
