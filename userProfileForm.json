@@ -1,0 +1,48 @@
+[
+    {
+      "title": "Personal Info",
+      "fields": [
+        {
+          "label": "Full Name",
+          "name": "fullName",
+          "type": "text",
+          "required": true
+        },
+        {
+          "label": "Passport Number",
+          "name": "passport",
+          "type": "text",
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Travel History",
+      "fields": [
+        {
+          "label": "Trips",
+          "name": "trips",
+          "type": "repeatable",
+          "fields": [
+            {
+              "label": "Country Visited",
+              "name": "country",
+              "type": "text",
+              "required": true
+            },
+            {
+              "label": "Year",
+              "name": "year",
+              "type": "number"
+            },
+            {
+              "label": "Purpose",
+              "name": "purpose",
+              "type": "text"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  

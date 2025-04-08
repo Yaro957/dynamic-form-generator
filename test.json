@@ -1,0 +1,74 @@
+[
+    {
+      "title": "Contact Information",
+      "fields": [
+        {
+          "name": "email",
+          "label": "Email Address",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "phoneNumber",
+          "label": "Phone Number",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "preferredContact",
+          "label": "Preferred Contact Method",
+          "type": "radio",
+          "options": ["Email", "Phone", "Text"],
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Subscription Details",
+      "fields": [
+        {
+          "name": "plan",
+          "label": "Subscription Plan",
+          "type": "select",
+          "options": ["Basic", "Standard", "Premium", "Enterprise"],
+          "required": true
+        },
+        {
+          "name": "autoRenew",
+          "label": "Auto-renew subscription?",
+          "type": "checkbox"
+        }
+      ]
+    },
+    {
+      "title": "Payment History",
+      "fields": [
+        {
+          "name": "transactions",
+          "label": "Previous Payments",
+          "type": "repeatable",
+          "fields": [
+            {
+              "name": "amount",
+              "label": "Payment Amount",
+              "type": "number",
+              "required": true
+            },
+            {
+              "name": "date",
+              "label": "Payment Date",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "status",
+              "label": "Status",
+              "type": "text",
+              "required": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  

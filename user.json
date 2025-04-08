@@ -1,0 +1,74 @@
+[
+    {
+      "title": "Personal Info",
+      "fields": [
+        {
+          "name": "fullName",
+          "label": "Full Name",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "age",
+          "label": "Age", 
+          "type": "number",
+          "required": true
+        },
+        {
+          "name": "gender",
+          "label": "Gender",
+          "type": "radio",
+          "options": ["Male", "Female", "Other"],
+          "required": true
+        }
+      ]
+    },
+    {
+      "title": "Education Details",
+      "fields": [
+        {
+          "name": "highestDegree",
+          "label": "Highest Degree",
+          "type": "select",
+          "options": ["High School", "Bachelor's", "Master's", "PhD"],
+          "required": true
+        },
+        {
+          "name": "hasDiploma",
+          "label": "Have a diploma?",
+          "type": "checkbox"
+        }
+      ]
+    },
+    {
+      "title": "Work Experience",
+      "fields": [
+        {
+          "name": "experiences",
+          "label": "Previous Jobs",
+          "type": "repeatable",
+          "fields": [
+            {
+              "name": "company",
+              "label": "Company Name",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "role",
+              "label": "Role",
+              "type": "text",
+              "required": true
+            },
+            {
+              "name": "years",
+              "label": "Years Worked",
+              "type": "number",
+              "required": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  
